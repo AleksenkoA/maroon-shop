@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Maroon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="layout">
+  <header class="header header_transparent">
+    <div class="header__container">
+<!--Потом добавить на mobile и tablet кнопку бургера/крестика-->
+      <a class="header__logo" href="index.html">
+        <img class="header__logo-img" src="img/header-logo.svg" width="131px" height="21px" alt="логотип Maroon">
+      </a>
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">О нас</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+  <!--Потом добавить на mobile и tablet соцсети-->
+
+        <div class="header__actions">
+          <a class="header__actions-login" href="#" aria-label="Пользователь">
+            <svg class="header__actions-login-icon" width="16" height="21">
+              <use xlink:href="img/sprite.svg#icon-login"></use>
+            </svg>
+
+        </a>
+          <a class="header__actions-cart" href="#" aria-label="Корзина">
+            <svg class="header__actions-cart-icon" width="18" height="21">
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main catalog-main">
+
+    <section class="catalog">
+      <div class="catalog-head">
+        <h1 class="main__title">Каталог</h1>
+        <button class="button catalog__button-close visually-hidden" aria-label="Закрыть фильтр" type="button"></button>
+        <button class="button catalog__button-open visually-hidden" type="button">Фильтр</button>
+      </div>
+
+      <div class="wrapper">
+        <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+
+          <fieldset class="fieldset-group">
+            <legend class="fieldset-group__title">Уход для лица</legend>
+
+              <ul class="fieldset-group__list">
+                <li class="fieldset-group__item">
+                  <label class="control">
+                    <input class="control-input visually-hidden" type="checkbox" name="уход для лица"  value="крема" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Крема</span>
+                  </label>
+                </li>
+
+                <li class="fieldset-group__item">
+                  <label class="control">
+                    <input class="control-input visually-hidden" type="checkbox" name="уход для лица"  value="сыворотки" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Сыворотки</span>
+                  </label>
+                </li>
+
+                <li class="fieldset-group__item">
+                  <label class="control">
+                    <input class="control-input visually-hidden" type="checkbox" name="уход для лица"  value="маски" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Маски</span>
+                  </label>
+                </li>
+
+                <li class="fieldset-group__item">
+                  <label class="control">
+                    <input class="control-input visually-hidden" type="checkbox" name="уход для лица"  value="пенки">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Пенки</span>
+                  </label>
+                </li>
+
+                <li class="fieldset-group__item">
+                  <label class="control">
+                    <input class="control-input visually-hidden" type="checkbox" name="уход для лица"  value="тоники">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Тоники</span>
+                  </label>
+                </li>
+
+                <li class="fieldset-group__item">
+                  <label class="control">
+                    <input class="control-input visually-hidden" type="checkbox" name="уход для лица"  value="пудры" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Пудры</span>
+                  </label>
+                </li>
+
+              </ul>
+          </fieldset>
+
+          <fieldset class="fieldset-group">
+            <legend class="fieldset-group__title">Уход для тела</legend>
+
+              <ul class="fieldset-group__list">
+                <li class="fieldset-group__item">
+                  <label class="control">
+                    <input class="control-input visually-hidden" type="checkbox" name="уход для тела"  value="крема">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Крема</span>
+                  </label>
+                </li>
+
+                <li class="fieldset-group__item">
+                  <label class="control">
+                    <input class="control-input visually-hidden" type="checkbox" name="уход для тела"  value="масла" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Масла</span>
+                  </label>
+                </li>
+
+                <li class="fieldset-group__item">
+                  <label class="control">
+                    <input class="control-input visually-hidden" type="checkbox" name="уход для тела"  value="скрабы">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Скрабы</span>
+                  </label>
+                </li>
+
+                <li class="fieldset-group__item">
+                  <label class="control">
+                    <input class="control-input visually-hidden" type="checkbox" name="уход для тела"  value="мыло" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Мыло</span>
+                  </label>
+                </li>
+
+                <li class="fieldset-group__item">
+                  <label class="control">
+                    <input class="control-input visually-hidden" type="checkbox" name="уход для тела"  value="бомбочки для ванны" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Бомбочки для ванны</span>
+                  </label>
+                </li>
+
+                <li class="fieldset-group__item">
+                  <label class="control">
+                    <input class="control-input visually-hidden" type="checkbox" name="уход для тела"  value="соль для ванны">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Соль для ванны</span>
+                  </label>
+                </li>
+
+              </ul>
+          </fieldset>
+
+          <fieldset class="fieldset-group">
+            <legend class="fieldset-group__title">Тип кожи</legend>
+
+              <ul class="fieldset-group__list">
+
+                <li class="fieldset-group__item">
+                  <label class="control">
+                    <input class="control-input visually-hidden" type="checkbox" name="тип кожи"  value="нормальная">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Нормальная</span>
+                  </label>
+                </li>
+
+                <li class="fieldset-group__item">
+                  <label class="control">
+                    <input class="control-input visually-hidden" type="checkbox" name="тип кожи"  value="сухая" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Сухая</span>
+                  </label>
+                </li>
+
+                <li class="fieldset-group__item">
+                  <label class="control">
+                    <input class="control-input visually-hidden" type="checkbox" name="тип кожи"  value="жирная">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Жирная</span>
+                  </label>
+                </li>
+
+                <li class="fieldset-group__item">
+                  <label class="control">
+                    <input class="control-input visually-hidden" type="checkbox" name="тип кожи"  value="комбинированная" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Комбинированная</span>
+                  </label>
+                </li>
+              </ul>
+              <div class="filter-form__buttons">        
+                <button class="button filter-form__submit-button" type="submit">Применить</button>
+                <button class="button filter-form__reset-button" type="reset">Сбросить</button>
+              </div>
+            </fieldset>
+
+        </form>
+      </div>
+
+      <div class="products">
+        <ul class="products-list">
+
+          <li class="products__item">
+            <a class="products__item-link" href="#">
+              <img class="products__item-img" src="img/product_high.jpg" width="270px" height="350px" alt="изображение крема для лица High">
+              <div class="products__wrapper">
+                <div class="products__text">
+                  <p class="products__item-title">High</p>
+                  <p class="products__item-price">990 &#8381;</p>
+                </div>
+                <div class="products__text">
+                  <p class="products__item-type">крем для лица</p>
+                  <p class="products__item-volume">50ml</p>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="products__item">
+            <a class="products__item-link" href="#">
+              <img class="products__item-img" src="img/product_rest.jpg" width="270px" height="350px" alt="изображение минеральной пудры Rest">
+              <div class="products__wrapper">
+                <div class="products__text">
+                  <p class="products__item-title">Rest</p>
+                  <p class="products__item-price">690 &#8381;</p>
+                </div>
+                <div class="products__text">
+                  <p class="products__item-type">минеральная пудра</p>
+                  <p class="products__item-volume">20g</p>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="products__item">
+            <a class="products__item-link" href="#">
+              <img class="products__item-img" src="img/product_rose.jpg" width="270px" height="350px" alt="изображение крема для лица Rose">
+              <div class="products__wrapper">
+                <div class="products__text">
+                  <p class="products__item-title">Rose</p>
+                  <p class="products__item-price">890 &#8381;</p>
+                </div>
+                <div class="products__text">
+                  <p class="products__item-type">крем для лица</p>
+                  <p class="products__item-volume">50ml</p>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="products__item">
+            <a class="products__item-link" href="#">
+              <img class="products__item-img" src="img/product_milk.jpg" width="270px" height="350px" alt="изображение масла для тела Milk">
+              <div class="products__wrapper">
+                <div class="products__text">
+                  <p class="products__item-title">Milk</p>
+                  <p class="products__item-price">790 &#8381;</p>
+                </div>
+                <div class="products__text">
+                  <p class="products__item-type">масло для тела</p>
+                  <p class="products__item-volume">150ml</p>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="products__item">
+            <a class="products__item-link" href="#">
+              <img class="products__item-img" src="img/product_paradise.jpg" width="270px" height="350px" alt="изображение минеральной пудры Paradise">
+              <div class="products__wrapper">
+                <div class="products__text">
+                  <p class="products__item-title">Paradise</p>
+                  <p class="products__item-price">590 &#8381;</p>
+                </div>
+                <div class="products__text">
+                  <p class="products__item-type">минеральная пудра</p>
+                  <p class="products__item-volume">15g</p>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="products__item">
+            <a class="products__item-link" href="#">
+              <img class="products__item-img" src="img/product_sun.jpg" width="270px" height="350px" alt="изображение бомбочки для ванны Sun">
+              <div class="products__wrapper">
+                <div class="products__text">
+                  <p class="products__item-title">Sun</p>
+                  <p class="products__item-price">90 &#8381;</p>
+                </div>
+                <div class="products__text">
+                  <p class="products__item-type">бомбочка для ванны</p>
+                  <p class="products__item-volume">20g</p>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="products__item">
+            <a class="products__item-link" href="#">
+              <img class="products__item-img" src="img/product_violet.jpg" width="270px" height="350px" alt="изображение крема для лица Violet">
+              <div class="products__wrapper">
+                <div class="products__text">
+                  <p class="products__item-title">Violet</p>
+                  <p class="products__item-price">890 &#8381;</p>
+                </div>
+                <div class="products__text">
+                  <p class="products__item-type">крем для лица</p>
+                  <p class="products__item-volume">50ml</p>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="products__item">
+            <a class="products__item-link" href="#">
+              <img class="products__item-img" src="img/product_clean.jpg" width="270px" height="350px" alt="изображение маски для лица Clean">
+              <div class="products__wrapper">
+                <div class="products__text">
+                  <p class="products__item-title">Clean</p>
+                  <p class="products__item-price">490 &#8381;</p>
+                </div>
+                <div class="products__text">
+                  <p class="products__item-type">маска для лица</p>
+                  <p class="products__item-volume">100g</p>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="products__item">
+            <a class="products__item-link" href="#">
+              <img class="products__item-img" src="img/product_coconut.jpg" width="270px" height="350px" alt="изображение масла для тела Coconut">
+              <div class="products__wrapper">
+                <div class="products__text">
+                  <p class="products__item-title">Coconut</p>
+                  <p class="products__item-price">990 &#8381;</p>
+                </div>
+                <div class="products__text">
+                  <p class="products__item-type">масло для тела</p>
+                  <p class="products__item-volume">300ml</p>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="products__item">
+            <a class="products__item-link" href="#">
+              <img class="products__item-img" src="img/product_lavender.jpg" width="270px" height="350px" alt="изображение мыла ручной работы Lavender">
+              <div class="products__wrapper">
+                <div class="products__text">
+                  <p class="products__item-title">Lavender</p>
+                  <p class="products__item-price">290 &#8381;</p>
+                </div>
+                <div class="products__text">
+                  <p class="products__item-type">мыло ручной работы</p>
+                  <p class="products__item-volume">50g</p>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="products__item">
+            <a class="products__item-link" href="#">
+              <img class="products__item-img" src="img/product_lotos.jpg" width="270px" height="350px" alt="изображение маски для лица Lotos">
+              <div class="products__wrapper">
+                <div class="products__text">
+                  <p class="products__item-title">Lotos</p>
+                  <p class="products__item-price">890 &#8381;</p>
+                </div>
+                <div class="products__text">
+                  <p class="products__item-type">маска для лица</p>
+                  <p class="products__item-volume">50ml</p>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="products__item">
+            <a class="products__item-link" href="#">
+              <img class="products__item-img" src="img/product_earth.jpg" width="270px" height="350px" alt="изображение бомбочки для ванны Earth">
+              <div class="products__wrapper">
+                <div class="products__text">
+                  <p class="products__item-title">Earth</p>
+                  <p class="products__item-price">90 &#8381;</p>
+                </div>
+                <div class="products__text">
+                  <p class="products__item-type">бомбочка для ванны</p>
+                  <p class="products__item-volume">20g</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pages-scroll">
+        <div class="pages-scroll__numbers">
+          <span class="pages-scroll__first-number">
+            <a class="pages-scroll__numbers-link pages-scroll__numbers-current" href="#" aria-label="Первая страница">1</a>
+          </span>
+          <span class="pages-scroll__last-number">
+            <a class="pages-scroll__numbers-link" href="#" aria-label="Третья страница (последняя)">3</a>
+          </span>
+        </div>
+
+        <div class="bestsellers__slider-buttons">
+          <svg class="arrow-left" width="26" height="12">
+            <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+          </svg>
+          <span class="bestsellers__slider-button bestsellers__slider-button--prev visually-hidden">листать назад</span>
+          
+          <svg class="arrow-right" width="26" height="12">
+            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+          </svg> 
+          <span class="bestsellers__slider-button bestsellers__slider-button--next visually-hidden">листать вперед</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="recently-viewed">
+      <div class="recently-viewed__wrapper">
+      <h2 class="recently-viewed__title">Вы недавно смотрели</h2>
+        <ul class="products-list">
+          <li class="products__item">
+            <a class="products__item-link" href="#">
+              <img class="products__item-img" src="img/product_clean.jpg" width="270px" height="350px" alt="изображение маски для лица Clean">
+              <div class="products__wrapper">
+                <div class="products__text">
+                  <p class="products__item-title">Clean</p>
+                  <p class="products__item-price">490 &#8381;</p>
+                </div>
+                <div class="products__text">
+                  <p class="products__item-type">маска для лица</p>
+                  <p class="products__item-volume">100g</p>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="products__item">
+            <a class="products__item-link" href="#">
+              <img class="products__item-img" src="img/product_lotos.jpg" width="270px" height="350px" alt="изображение маски для лица Lotos">
+              <div class="products__wrapper">
+                <div class="products__text">
+                  <p class="products__item-title">Lotos</p>
+                  <p class="products__item-price">890 &#8381;</p>
+                </div>
+                <div class="products__text">
+                  <p class="products__item-type">маска для лица</p>
+                  <p class="products__item-volume">50ml</p>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="products__item">
+            <a class="products__item-link" href="#">
+              <img class="products__item-img" src="img/product_lavender.jpg" width="270px" height="350px" alt="изображение мыла ручной работы Lavender">
+              <div class="products__wrapper">
+                <div class="products__text">
+                  <p class="products__item-title">Lavender</p>
+                  <p class="products__item-price">290 &#8381;</p>
+                </div>
+                <div class="products__text">
+                  <p class="products__item-type">мыло ручной работы</p>
+                  <p class="products__item-volume">50g</p>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="products__item">
+            <a class="products__item-link" href="#">
+              <img class="products__item-img" src="img/product_coconut.jpg" width="270px" height="350px" alt="изображение масла для тела Coconut">
+              <div class="products__wrapper">
+                <div class="products__text">
+                  <p class="products__item-title">Coconut</p>
+                  <p class="products__item-price">990 &#8381;</p>
+                </div>
+                <div class="products__text">
+                  <p class="products__item-type">масло для тела</p>
+                  <p class="products__item-volume">300ml</p>
+                </div>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+      <div class="pages-scroll">
+        <div class="pages-scroll__numbers">
+          <span class="pages-scroll__first-number">
+            <a class="pages-scroll__numbers-link pages-scroll__numbers-current" href="#" aria-label="Первая страница">1</a>
+          </span>
+          <span class="pages-scroll__last-number">
+            <a class="pages-scroll__numbers-link" href="#" aria-label="Третья страница (последняя)">3</a>
+          </span>
+        </div>
+
+        <div class="bestsellers__slider-buttons">
+          <svg class="arrow-left" width="26" height="12">
+            <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+          </svg>
+          <span class="bestsellers__slider-button bestsellers__slider-button--prev visually-hidden">листать назад</span>
+          
+          <svg class="arrow-right" width="26" height="12">
+            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+          </svg> 
+          <span class="bestsellers__slider-button bestsellers__slider-button--next visually-hidden">листать вперед</span>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="subscription">
+      <div class="subscription__container">
+        <div class="subscription__images-wrapper">
+          <img class="subscription__image" src="img/subscription-photo-1.jpg" width="233px" height="233px" alt="изображение продукции Maroon">
+          <img class="subscription__image" src="img/subscription-photo-2.jpg" width="233px" height="233px" alt="изображение продукции Maroon">
+          <img class="subscription__image" src="img/subscription-photo-3.jpg" width="233px" height="233px" alt="изображение продукции Maroon">
+          <img class="subscription__image" src="img/subscription-photo-4.jpg" width="233px" height="233px" alt="изображение продукции Maroon">
+          <img class="subscription__image" src="img/subscription-photo-5.jpg" width="233px" height="233px" alt="изображение продукции Maroon">
+          <img class="subscription__image" src="img/subscription-photo-6.jpg" width="233px" height="233px" alt="изображение продукции Maroon">
+        </div>  
+        
+        <div class="subscription__content">
+          <h2 class="title">Присоединяйтесь к нам</h2>
+          <p class="subscription__text">Подпишитесь на наш аккаунт @marooncare и узнавайте о новиках и акциях первыми</p>
+          <a class="button subscription__button" href="#">Подписаться</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts__container">
+        <div class="contacts__content">
+          <h2 class="title">Контакты</h2>
+
+          <div class="contacts__address">
+            <p class="contacts__address-title">Адрес</p>
+            <p class="contacts__address-text">Санкт-Петербург,<br> ул. Большая Конюшенная, 19</p>
+          </div>
+
+          <div class="contacts__phone">
+            <p class="contacts__phone-title">Телефон</p>
+            <a class="contacts__phone-text" href="tel:+79238889060" aria-label="Телефон">+7 (923) 888-90-60</a>
+          </div>
+
+          <div class="contacts__email">
+            <p class="contacts__email-title">E-mail</p>
+            <a class="contacts__email-text" href="mailto:info@maroon.ru">info@maroon.ru</a>
+          </div>
+
+          <ul class="social-list contacts__social-list">
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--facebook" href="#" aria-label="Facebook">
+                <svg class="social-list__icon social-list__icon--facebook" width="11" height="18">
+                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <span class="visually-hidden">Facebook</span>
+            </li>
+
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--instagram" href="#" aria-label="Instagram">
+                <svg class="social-list__icon social-list__icon--instagram" width="20" height="20">
+                  <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <span class="visually-hidden">Instagram</span>
+            </li>
+
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--twitter" href="#" aria-label="Twitter">
+                <svg class="social-list__icon social-list__icon--twitter" width="20" height="17">
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <span class="visually-hidden">Twitter</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="contacts__map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af048d8a890aa77a13767409625d02147de81d43878a08799eb1da52b62bd7bb9&amp;source=constructor" width="670" height="422" frameborder="0"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+
+      <a class="footer__logo">
+        <img class="footer__logo-img" src="img/header-logo.svg" width="131px" height="21px" alt="логотип Maroon">
+      </a>
+    
+      <nav class="footer__menu">
+    
+        <ul class="footer__list">
+
+          <li class="footer__item">
+            <a class="footer__link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">О нас</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Магазины</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Контакты</a>
+          </li>
+          
+        </ul>
+    
+        <ul class="social-list footer__social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/" aria-label="Facebook">
+              <svg class="social-list__icon social-list__icon--facebook" width="11" height="18">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <span class="visually-hidden">Facebook</span>
+          </li>
+    
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/" aria-label="Instagram">
+              <svg class="social-list__icon social-list__icon--instagram" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <span class="visually-hidden">Instagram</span>
+          </li>
+    
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--twitter" href="https://twitter.com/" aria-label="Twitter">
+              <svg class="social-list__icon social-list__icon--twitter" width="20" height="17">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+            <span class="visually-hidden">Twitter</span>
+          </li>
+    
+        </ul>
+    
+      </nav>
+    </div>
+
+    <div class="footer__copyright">
+      <div class="footer__copyright-wrapper-left">
+        <p class="footer__copyright-text">Maroon</p>
+        <p class="footer__copyright-text">&#xA9;</p>
+        <p class="footer__copyright-text">2020</p>
+        <p class="footer__copyright-text">Все права защищены</p>
+      </div>
+      <p class="footer__copyright-text">Политика конфиденциальности</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

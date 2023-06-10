@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Maroon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="layout">
+  <header class="header header_transparent">
+    <div class="header__container">
+<!--Потом добавить на mobile и tablet кнопку бургера/крестика-->
+      <a class="header__logo" href="index.html">
+        <img class="header__logo-img" src="img/header-logo.svg" width="131px" height="21px" alt="логотип Maroon">
+      </a>
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">О нас</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+  <!--Потом добавить на mobile и tablet соцсети-->
+
+        <div class="header__actions">
+          <a class="header__actions-login" href="#" aria-label="Пользователь">
+            <svg class="header__actions-login-icon" width="16" height="21">
+              <use xlink:href="img/sprite.svg#icon-login"></use>
+            </svg>
+
+        </a>
+          <a class="header__actions-cart" href="#" aria-label="Корзина">
+            <svg class="header__actions-cart-icon" width="18" height="21">
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="card">
+      <h2 class="title visually-hidden">Карточка товара</h2>
+      
+      <div class="card__wrapper">
+        <div class="card__img-wrapper">
+          <img class="card__img" src="img/product_rose_big.jpg" width="630px" height="647px" alt="изображение крема для лица Rose">
+        </div>
+      
+        <div class="card__content">
+          <p class="card__content-title">Rose</p>
+          <p class="card__content-description">крем для лица</p>
+          
+          <div class="card__text">
+            <p>Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей.</p>
+            <p>Крем равномерно распределяется по поверхности благодаря легкой текстуре, обеспечивает глубокое увлажнение, регенерацию клеток.</p>
+          </div>
+
+          <ul class="card__info">
+
+            <li class="card__accordion">
+              <h3 class="card__accordion-title">Состав</h3>
+              <button class="card__accordion-toggler" type="button" aria-label="Открыть">
+                <span class="card__accordion-toggler-icon"></span>
+              </button>
+              <p class="card__accordion-text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene
+                  Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower
+                  Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+            </li>
+            
+            <li class="card__accordion">
+              <h3 class="card__accordion-title">Способ применения</h3>
+              <button class="card__accordion-toggler" type="button" aria-label="Открыть">
+                <span class="card__accordion-toggler-icon"></span>
+              </button>
+              <p class="card__accordion-text">Нанесите крем на очищенную кожу лица легкими массажными круговыми движениями, избегая области вокруг глаз. Подходит для дневного и ночного ухода.</p>
+            </li>
+          </ul>
+
+          <form class="card__form" action="https://echo.htmlacademy.ru" method="POST">
+
+            <fieldset class="card__volume">
+              <legend class="card__volume-title">Объем</legend>
+      
+                <ul class="card__volume-list">
+                  <li class="card__volume-item">
+                    <label class="control">
+                      <input class="control-input visually-hidden" type="radio" name="объем"  value="50ml" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">50ml</span>
+                    </label>
+                  </li>
+      
+                  <li class="card__volume-item">
+                    <label class="control">
+                      <input class="control-input visually-hidden" type="radio" name="объем"  value="30ml">
+                      <span class="control-mark"></span>
+                      <span class="control-label">30ml</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              
+              <p class="card__price">890 &#8381;</p>
+              <button class="button card__price-button" type="submit">Добавить в корзину</button>
+            </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="recently-viewed">
+      <h2 class="main__title">Вам также может понравиться</h2>
+      <div class="products">
+        <ul class="products-list">
+
+          <li class="products__item">
+            <a class="products__item-link" href="#">
+              <img class="products__item-img" src="img/product_clean.jpg" width="270px" height="350px" alt="изображение маски для лица Clean">
+              <div class="products__wrapper">
+                <div class="products__text">
+                  <p class="products__item-title">Clean</p>
+                  <p class="products__item-type">маска для лица</p>
+                </div>
+                <div class="products__text">
+                  <p class="products__item-price">490 &#8381;</p>
+                  <p class="products__item-volume">100g</p>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="products__item">
+            <a class="products__item-link" href="#">
+              <img class="products__item-img" src="img/product_lotos.jpg" width="270px" height="350px" alt="изображение маски для лица Lotos">
+              <div class="products__wrapper">
+                <div class="products__text">
+                  <p class="products__item-title">Lotos</p>
+                  <p class="products__item-type">маска для лица</p>
+                </div>
+                <div class="products__text">
+                  <p class="products__item-price">890 &#8381;</p>
+                  <p class="products__item-volume">50ml</p>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="products__item">
+            <a class="products__item-link" href="#">
+              <img class="products__item-img" src="img/product_lavender.jpg" width="270px" height="350px" alt="изображение мыла ручной работы Lavender">
+              <div class="products__wrapper">
+                <div class="products__text">
+                  <p class="products__item-title">Lavender</p>
+                  <p class="products__item-type">мыло ручной работы</p>
+                </div>
+                <div class="products__text">
+                  <p class="products__item-price">290 &#8381;</p>
+                  <p class="products__item-volume">50g</p>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="products__item">
+            <a class="products__item-link" href="#">
+              <img class="products__item-img" src="img/product_coconut.jpg" width="270px" height="350px" alt="изображение масла для тела Coconut">
+              <div class="products__wrapper">
+                <div class="products__text">
+                  <p class="products__item-title">Coconut</p>
+                  <p class="products__item-type">масло для тела</p>
+                </div>
+                <div class="products__text">
+                  <p class="products__item-price">990 &#8381;</p>
+                  <p class="products__item-volume">300ml</p>
+                </div>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="pages-scroll">
+        <div class="pages-scroll__numbers">
+          <span class="pages-scroll__first-number">
+            <a class="pages-scroll__numbers-link pages-scroll__numbers-current" href="#" aria-label="Первая страница">1</a>
+          </span>
+          <span class="pages-scroll__last-number">
+            <a class="pages-scroll__numbers-link" href="#" aria-label="Третья страница (последняя)">3</a>
+          </span>
+        </div>
+
+        <div class="bestsellers__slider-buttons">
+          <svg class="arrow-left" width="26" height="12">
+            <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+          </svg>
+          <span class="bestsellers__slider-button bestsellers__slider-button--prev visually-hidden">листать назад</span>
+          
+          <svg class="arrow-right" width="26" height="12">
+            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+          </svg> 
+          <span class="bestsellers__slider-button bestsellers__slider-button--next visually-hidden">листать вперед</span>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+
+      <a class="footer__logo">
+        <img class="footer__logo-img" src="img/header-logo.svg" width="131px" height="21px" alt="логотип Maroon">
+      </a>
+    
+      <nav class="footer__menu">
+    
+        <ul class="footer__list">
+
+          <li class="footer__item">
+            <a class="footer__link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">О нас</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Магазины</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Контакты</a>
+          </li>
+          
+        </ul>
+    
+        <ul class="social-list footer__social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/" aria-label="Facebook">
+              <svg class="social-list__icon social-list__icon--facebook" width="11" height="18">
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <span class="visually-hidden">Facebook</span>
+          </li>
+    
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--instagram" href="https://www.instagram.com/" aria-label="Instagram">
+              <svg class="social-list__icon social-list__icon--instagram" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <span class="visually-hidden">Instagram</span>
+          </li>
+    
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--twitter" href="https://twitter.com/" aria-label="Twitter">
+              <svg class="social-list__icon social-list__icon--twitter" width="20" height="17">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+            <span class="visually-hidden">Twitter</span>
+          </li>
+    
+        </ul>
+    
+      </nav>
+    </div>
+
+    <div class="footer__copyright">
+      <div class="footer__copyright-wrapper-left">
+        <p class="footer__copyright-text">Maroon</p>
+        <p class="footer__copyright-text">&#xA9;</p>
+        <p class="footer__copyright-text">2020</p>
+        <p class="footer__copyright-text">Все права защищены</p>
+      </div>
+      <p class="footer__copyright-text">Политика конфиденциальности</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
