@@ -685,7 +685,6 @@ fieldset {
   font-size: 16px;
   line-height: 23px;
   margin-top: 30px;
-  margin-bottom: 65px;
 }
 
 .card__text p {
@@ -698,6 +697,27 @@ padding-top: 15px;
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.card__accordion {
+  position: relative;
+  width: 370px;
+}
+
+.card__accordion::before {
+  content: '';
+  position: absolute;
+  background-color: #D1D1D1;
+  height: 1px;
+  width: 370px;
+  top: 170px;
+  left: 0;
+}
+
+.card__accordion-wrapper {
+  width: 370px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card__accordion-title {
@@ -716,10 +736,17 @@ padding-top: 15px;
   padding: 0;
 }
 
+.card__accordion-title-ingredients {
+  padding-top: 63px;
+}
+
 .card__accordion-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
 }
 
 .card__volume-item .control-label {
